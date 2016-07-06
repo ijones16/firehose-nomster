@@ -1,3 +1,3 @@
 == README
 
-* https://git.heroku.com/nomster-ian-jones.git
+https://nomster-ian-jones.herokuapp.com/
