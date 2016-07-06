@@ -1,10 +1,8 @@
 @font-face {
-    font-family: 'OpenSans';
-    src: url('/assets/OpenSans-Regular.eot');
-    src: url('/assets/OpenSans-Regular.eot?#iefix') format('embedded-opentype'),
-         url('/assets/OpenSans-Regular.woff') format('woff'),
-         url('/assets/OpenSans-Regular.ttf') format('truetype'),
-         url('/assets/OpenSans-Regular.svg#chunkfiveroman') format('svg');
+    font-family: 'open_sansregular';
+    src: url('/assets/opensans-regular-webfont.woff2') format('woff2'),
+         url('/assets/opensans-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+
 }
