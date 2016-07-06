@@ -11,10 +11,16 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0;
 }
 
-.navbar.navbar-inverse{
+.navbar .navbar-inverse {
   background: url('/assets/footer_lodyas.png');
   border-radius: 0px;
   box-shadow: 0px 1px 3px #2a2a2a;
+}
+
+.navbar .navbar-brand {
+  color: #C33C54;
+  font-family: 'OpenSans', sans-serif;
+  font-size: 26px;
 }
 
 .booyah-box {
