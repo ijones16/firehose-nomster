@@ -5,3 +5,11 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+$i = 0
+$limit = 20
+
+while $i < $limit
+  Place.create(name: "place #{$i}", description: "description #{$i}", address: "description #{$i}")
+  $i += 1
+end
