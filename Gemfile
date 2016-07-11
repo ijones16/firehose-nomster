@@ -37,6 +37,9 @@ gem 'sass-rails'
 gem 'will_paginate', '~> 3.1.0'
 gem 'will_paginate-bootstrap'
 
+gem 'geocoder', '1.3.4'
+gem 'figaro', '>= 1.0.0'
+
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
