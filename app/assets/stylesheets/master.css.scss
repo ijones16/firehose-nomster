@@ -2,7 +2,7 @@
 @import "bootstrap";
 
 body {
-  background: url('/assets/restaurant.png');
+  background: url('/assets/sayagata-400px.png');
   font-family: Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
@@ -11,16 +11,42 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0;
 }
 
-.navbar .navbar-inverse {
+.navbar .navbar-inverse  {
   background: url('/assets/footer_lodyas.png');
   border-radius: 0px;
   box-shadow: 0px 1px 3px #2a2a2a;
+  margin-bottom: 0px;
+}
+
+.no-bottom-margin {
+  margin-bottom: 0px;
 }
 
 .navbar .navbar-brand {
-  color: #C33C54;
+  color: #85c8c5;
   font-family: 'open_sansregular', sans-serif;
   font-size: 26px;
+  margin-bottom: 0px;
+}
+
+.carousel-inner > .item > img, .carousel-inner > .item > a > img {
+  max-height: 550px;
+  width: 100%;
+}
+
+.carousel-caption {
+  font-family: 'open_sansregular', sans-serif;
+  font-size: 30px;
+  font-weight: 100;
+  text-shadow: rgba(0,0,0,0.95) 2px 2px;
+  background-color: rgba(0,0,0,0.5);
+  width: 100%;
+  position: absolute;
+  left: 0;
+}
+
+.carousel {
+  box-shadow: 0px 3px 8px #2a2a2a;
 }
 
 .booyah-box {
