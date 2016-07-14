@@ -4,7 +4,12 @@ class PhotosController < ApplicationController
   def create 
     @place = Place.find(params[:place_id])
     @place.photos.create(photos_params)
-    redirect_to place_path(@place)
+    if @place.valid?
+      redirect_to place_path(@place)
+    else
+      flash[:alert] = "Caption too long or image not present."
+      redirect_to place_path(@place)
+    end
   end
 
   private

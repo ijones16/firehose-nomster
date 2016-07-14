@@ -40,13 +40,25 @@
   
   <div class="clear"></div>
   <br>
+  <style type="text/css">
+    
+    
+</style>
   <% if @place.photos.present? %>
     <h1 class="pull-left">Pictures</h1>
     <div class="col-xs-10 col-xs-offset-1">
-      <% @place.photos.each do |photo| %>
-        <%= image_tag photo.picture %>
-        <%= photo.caption %>
-      <% end %>
+      <div class="preview">
+        <%= image_tag @place.photos.first.picture, name: "preview"%>
+      </div>
+      <div class="thumbnails">
+        <% @place.photos.each do |photo| %>
+          <div>
+            <%= image_tag photo.picture, onMouseover:"preview.src='#{photo.picture}'"%> 
+            <br>
+            <%= photo.caption %>
+          </div>
+        <% end %>
+      </div>
     </div>
   <% end %>
   <div class="clear"></div>
